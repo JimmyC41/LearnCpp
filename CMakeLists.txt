@@ -8,12 +8,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 # Find all .cpp files two levels deep
-file(GLOB_RECURSE EXAMPLE_SRCS
+file(GLOB_RECURSE ALL_SRCS
     CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/*/*/*.cpp")
 
 # For each src file, generate an executable
-foreach(src IN LISTS EXAMPLE_SRCS)
+foreach(src IN LISTS ALL_SRCS)
     # Path relative to project root
     file(RELATIVE_PATH rel "${CMAKE_SOURCE_DIR}" "${src}")
 

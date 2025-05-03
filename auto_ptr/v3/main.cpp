@@ -1,5 +1,6 @@
 // From Ch22.3 learncpp.com
 // Deep copy
+// Works, but copying rvalues is inefficient
 
 #include "resource.h"
 

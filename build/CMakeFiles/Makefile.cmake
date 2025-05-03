@@ -55,4 +55,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/auto_ptr_v3_main.dir/DependInfo.cmake"
   "CMakeFiles/auto_ptr_v4_main.dir/DependInfo.cmake"
   "CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/DependInfo.cmake"
+  "CMakeFiles/friend_class_main.dir/DependInfo.cmake"
+  "CMakeFiles/friend_function_main.dir/DependInfo.cmake"
   )

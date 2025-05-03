@@ -3,5 +3,7 @@
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v3_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v4_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/friend_class_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/friend_function_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/edit_cache.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/rebuild_cache.dir

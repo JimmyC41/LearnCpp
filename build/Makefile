@@ -182,6 +182,32 @@ build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/build.make CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/build
 .PHONY : build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId/fast
 
+#=============================================================================
+# Target rules for targets named friend_class_main
+
+# Build rule for target.
+friend_class_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 friend_class_main
+.PHONY : friend_class_main
+
+# fast build rule for target.
+friend_class_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/build
+.PHONY : friend_class_main/fast
+
+#=============================================================================
+# Target rules for targets named friend_function_main
+
+# Build rule for target.
+friend_function_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 friend_function_main
+.PHONY : friend_function_main
+
+# fast build rule for target.
+friend_function_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/build
+.PHONY : friend_function_main/fast
+
 CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
 .PHONY : CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o
 
@@ -302,6 +328,54 @@ auto_ptr/v4/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/auto_ptr/v4/main.cpp.s
 .PHONY : auto_ptr/v4/main.cpp.s
 
+friend/class/main.o: friend/class/main.cpp.o
+.PHONY : friend/class/main.o
+
+# target to build an object file
+friend/class/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/friend/class/main.cpp.o
+.PHONY : friend/class/main.cpp.o
+
+friend/class/main.i: friend/class/main.cpp.i
+.PHONY : friend/class/main.i
+
+# target to preprocess a source file
+friend/class/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/friend/class/main.cpp.i
+.PHONY : friend/class/main.cpp.i
+
+friend/class/main.s: friend/class/main.cpp.s
+.PHONY : friend/class/main.s
+
+# target to generate assembly for a file
+friend/class/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/friend/class/main.cpp.s
+.PHONY : friend/class/main.cpp.s
+
+friend/function/main.o: friend/function/main.cpp.o
+.PHONY : friend/function/main.o
+
+# target to build an object file
+friend/function/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/friend/function/main.cpp.o
+.PHONY : friend/function/main.cpp.o
+
+friend/function/main.i: friend/function/main.cpp.i
+.PHONY : friend/function/main.i
+
+# target to preprocess a source file
+friend/function/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/friend/function/main.cpp.i
+.PHONY : friend/function/main.cpp.i
+
+friend/function/main.s: friend/function/main.cpp.s
+.PHONY : friend/function/main.s
+
+# target to generate assembly for a file
+friend/function/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/friend/function/main.cpp.s
+.PHONY : friend/function/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -315,6 +389,8 @@ help:
 	@echo "... auto_ptr_v3_main"
 	@echo "... auto_ptr_v4_main"
 	@echo "... build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId"
+	@echo "... friend_class_main"
+	@echo "... friend_function_main"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.i"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.s"
@@ -330,6 +406,12 @@ help:
 	@echo "... auto_ptr/v4/main.o"
 	@echo "... auto_ptr/v4/main.i"
 	@echo "... auto_ptr/v4/main.s"
+	@echo "... friend/class/main.o"
+	@echo "... friend/class/main.i"
+	@echo "... friend/class/main.s"
+	@echo "... friend/function/main.o"
+	@echo "... friend/function/main.i"
+	@echo "... friend/function/main.s"
 .PHONY : help
 
 
