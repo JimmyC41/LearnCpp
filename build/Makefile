@@ -118,17 +118,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named auto_ptr_v1_auto_ptr_v1
+# Target rules for targets named auto_ptr_v1_main
 
 # Build rule for target.
-auto_ptr_v1_auto_ptr_v1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_ptr_v1_auto_ptr_v1
-.PHONY : auto_ptr_v1_auto_ptr_v1
+auto_ptr_v1_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_ptr_v1_main
+.PHONY : auto_ptr_v1_main
 
 # fast build rule for target.
-auto_ptr_v1_auto_ptr_v1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/build.make CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/build
-.PHONY : auto_ptr_v1_auto_ptr_v1/fast
+auto_ptr_v1_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_main.dir/build.make CMakeFiles/auto_ptr_v1_main.dir/build
+.PHONY : auto_ptr_v1_main/fast
+
+#=============================================================================
+# Target rules for targets named auto_ptr_v2_main
+
+# Build rule for target.
+auto_ptr_v2_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_ptr_v2_main
+.PHONY : auto_ptr_v2_main
+
+# fast build rule for target.
+auto_ptr_v2_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v2_main.dir/build.make CMakeFiles/auto_ptr_v2_main.dir/build
+.PHONY : auto_ptr_v2_main/fast
+
+#=============================================================================
+# Target rules for targets named auto_ptr_v3_main
+
+# Build rule for target.
+auto_ptr_v3_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_ptr_v3_main
+.PHONY : auto_ptr_v3_main
+
+# fast build rule for target.
+auto_ptr_v3_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v3_main.dir/build.make CMakeFiles/auto_ptr_v3_main.dir/build
+.PHONY : auto_ptr_v3_main/fast
+
+#=============================================================================
+# Target rules for targets named auto_ptr_v4_main
+
+# Build rule for target.
+auto_ptr_v4_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_ptr_v4_main
+.PHONY : auto_ptr_v4_main
+
+# fast build rule for target.
+auto_ptr_v4_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/build
+.PHONY : auto_ptr_v4_main/fast
 
 #=============================================================================
 # Target rules for targets named build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId
@@ -167,29 +206,101 @@ CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/build.make CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
 .PHONY : CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
 
-auto_ptr/v1/auto_ptr_v1.o: auto_ptr/v1/auto_ptr_v1.cpp.o
-.PHONY : auto_ptr/v1/auto_ptr_v1.o
+auto_ptr/v1/main.o: auto_ptr/v1/main.cpp.o
+.PHONY : auto_ptr/v1/main.o
 
 # target to build an object file
-auto_ptr/v1/auto_ptr_v1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/build.make CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/auto_ptr/v1/auto_ptr_v1.cpp.o
-.PHONY : auto_ptr/v1/auto_ptr_v1.cpp.o
+auto_ptr/v1/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_main.dir/build.make CMakeFiles/auto_ptr_v1_main.dir/auto_ptr/v1/main.cpp.o
+.PHONY : auto_ptr/v1/main.cpp.o
 
-auto_ptr/v1/auto_ptr_v1.i: auto_ptr/v1/auto_ptr_v1.cpp.i
-.PHONY : auto_ptr/v1/auto_ptr_v1.i
+auto_ptr/v1/main.i: auto_ptr/v1/main.cpp.i
+.PHONY : auto_ptr/v1/main.i
 
 # target to preprocess a source file
-auto_ptr/v1/auto_ptr_v1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/build.make CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/auto_ptr/v1/auto_ptr_v1.cpp.i
-.PHONY : auto_ptr/v1/auto_ptr_v1.cpp.i
+auto_ptr/v1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_main.dir/build.make CMakeFiles/auto_ptr_v1_main.dir/auto_ptr/v1/main.cpp.i
+.PHONY : auto_ptr/v1/main.cpp.i
 
-auto_ptr/v1/auto_ptr_v1.s: auto_ptr/v1/auto_ptr_v1.cpp.s
-.PHONY : auto_ptr/v1/auto_ptr_v1.s
+auto_ptr/v1/main.s: auto_ptr/v1/main.cpp.s
+.PHONY : auto_ptr/v1/main.s
 
 # target to generate assembly for a file
-auto_ptr/v1/auto_ptr_v1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/build.make CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir/auto_ptr/v1/auto_ptr_v1.cpp.s
-.PHONY : auto_ptr/v1/auto_ptr_v1.cpp.s
+auto_ptr/v1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v1_main.dir/build.make CMakeFiles/auto_ptr_v1_main.dir/auto_ptr/v1/main.cpp.s
+.PHONY : auto_ptr/v1/main.cpp.s
+
+auto_ptr/v2/main.o: auto_ptr/v2/main.cpp.o
+.PHONY : auto_ptr/v2/main.o
+
+# target to build an object file
+auto_ptr/v2/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v2_main.dir/build.make CMakeFiles/auto_ptr_v2_main.dir/auto_ptr/v2/main.cpp.o
+.PHONY : auto_ptr/v2/main.cpp.o
+
+auto_ptr/v2/main.i: auto_ptr/v2/main.cpp.i
+.PHONY : auto_ptr/v2/main.i
+
+# target to preprocess a source file
+auto_ptr/v2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v2_main.dir/build.make CMakeFiles/auto_ptr_v2_main.dir/auto_ptr/v2/main.cpp.i
+.PHONY : auto_ptr/v2/main.cpp.i
+
+auto_ptr/v2/main.s: auto_ptr/v2/main.cpp.s
+.PHONY : auto_ptr/v2/main.s
+
+# target to generate assembly for a file
+auto_ptr/v2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v2_main.dir/build.make CMakeFiles/auto_ptr_v2_main.dir/auto_ptr/v2/main.cpp.s
+.PHONY : auto_ptr/v2/main.cpp.s
+
+auto_ptr/v3/main.o: auto_ptr/v3/main.cpp.o
+.PHONY : auto_ptr/v3/main.o
+
+# target to build an object file
+auto_ptr/v3/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v3_main.dir/build.make CMakeFiles/auto_ptr_v3_main.dir/auto_ptr/v3/main.cpp.o
+.PHONY : auto_ptr/v3/main.cpp.o
+
+auto_ptr/v3/main.i: auto_ptr/v3/main.cpp.i
+.PHONY : auto_ptr/v3/main.i
+
+# target to preprocess a source file
+auto_ptr/v3/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v3_main.dir/build.make CMakeFiles/auto_ptr_v3_main.dir/auto_ptr/v3/main.cpp.i
+.PHONY : auto_ptr/v3/main.cpp.i
+
+auto_ptr/v3/main.s: auto_ptr/v3/main.cpp.s
+.PHONY : auto_ptr/v3/main.s
+
+# target to generate assembly for a file
+auto_ptr/v3/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v3_main.dir/build.make CMakeFiles/auto_ptr_v3_main.dir/auto_ptr/v3/main.cpp.s
+.PHONY : auto_ptr/v3/main.cpp.s
+
+auto_ptr/v4/main.o: auto_ptr/v4/main.cpp.o
+.PHONY : auto_ptr/v4/main.o
+
+# target to build an object file
+auto_ptr/v4/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/auto_ptr/v4/main.cpp.o
+.PHONY : auto_ptr/v4/main.cpp.o
+
+auto_ptr/v4/main.i: auto_ptr/v4/main.cpp.i
+.PHONY : auto_ptr/v4/main.i
+
+# target to preprocess a source file
+auto_ptr/v4/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/auto_ptr/v4/main.cpp.i
+.PHONY : auto_ptr/v4/main.cpp.i
+
+auto_ptr/v4/main.s: auto_ptr/v4/main.cpp.s
+.PHONY : auto_ptr/v4/main.s
+
+# target to generate assembly for a file
+auto_ptr/v4/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/auto_ptr/v4/main.cpp.s
+.PHONY : auto_ptr/v4/main.cpp.s
 
 # Help Target
 help:
@@ -199,14 +310,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... auto_ptr_v1_auto_ptr_v1"
+	@echo "... auto_ptr_v1_main"
+	@echo "... auto_ptr_v2_main"
+	@echo "... auto_ptr_v3_main"
+	@echo "... auto_ptr_v4_main"
 	@echo "... build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.i"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.s"
-	@echo "... auto_ptr/v1/auto_ptr_v1.o"
-	@echo "... auto_ptr/v1/auto_ptr_v1.i"
-	@echo "... auto_ptr/v1/auto_ptr_v1.s"
+	@echo "... auto_ptr/v1/main.o"
+	@echo "... auto_ptr/v1/main.i"
+	@echo "... auto_ptr/v1/main.s"
+	@echo "... auto_ptr/v2/main.o"
+	@echo "... auto_ptr/v2/main.i"
+	@echo "... auto_ptr/v2/main.s"
+	@echo "... auto_ptr/v3/main.o"
+	@echo "... auto_ptr/v3/main.i"
+	@echo "... auto_ptr/v3/main.s"
+	@echo "... auto_ptr/v4/main.o"
+	@echo "... auto_ptr/v4/main.i"
+	@echo "... auto_ptr/v4/main.s"
 .PHONY : help
 
 

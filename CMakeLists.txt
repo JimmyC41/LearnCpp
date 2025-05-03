@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
+project(LearnCpp LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# Allow headers in root directory
-include_directories(${CMAKE_SOURCE_DIR})
 
 # Put executables into build/bin
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")

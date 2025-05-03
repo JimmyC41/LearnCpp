@@ -4,9 +4,9 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jimmy/Projects/LearnCpp -I/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/3.31.4/CompilerIdCXX -I/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/3.31.4
+CXX_INCLUDES = -I/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/3.31.4/CompilerIdCXX -I/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/3.31.4
 
-CXX_FLAGSarm64 = -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
+CXX_FLAGSarm64 = -stdlib=libc++ -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
-CXX_FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
+CXX_FLAGS = -stdlib=libc++ -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 

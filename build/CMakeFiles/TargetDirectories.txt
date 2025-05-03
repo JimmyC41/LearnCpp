@@ -1,4 +1,7 @@
-/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v1_auto_ptr_v1.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v1_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v2_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v3_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v4_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/edit_cache.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/rebuild_cache.dir
