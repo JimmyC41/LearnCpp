@@ -208,6 +208,32 @@ friend_function_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/build
 .PHONY : friend_function_main/fast
 
+#=============================================================================
+# Target rules for targets named virtual_print_simple_main
+
+# Build rule for target.
+virtual_print_simple_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 virtual_print_simple_main
+.PHONY : virtual_print_simple_main
+
+# fast build rule for target.
+virtual_print_simple_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/build
+.PHONY : virtual_print_simple_main/fast
+
+#=============================================================================
+# Target rules for targets named virtual_print_struct_main
+
+# Build rule for target.
+virtual_print_struct_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 virtual_print_struct_main
+.PHONY : virtual_print_struct_main
+
+# fast build rule for target.
+virtual_print_struct_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/build
+.PHONY : virtual_print_struct_main/fast
+
 CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
 .PHONY : CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o
 
@@ -376,6 +402,54 @@ friend/function/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/friend/function/main.cpp.s
 .PHONY : friend/function/main.cpp.s
 
+virtual/print_simple/main.o: virtual/print_simple/main.cpp.o
+.PHONY : virtual/print_simple/main.o
+
+# target to build an object file
+virtual/print_simple/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/virtual/print_simple/main.cpp.o
+.PHONY : virtual/print_simple/main.cpp.o
+
+virtual/print_simple/main.i: virtual/print_simple/main.cpp.i
+.PHONY : virtual/print_simple/main.i
+
+# target to preprocess a source file
+virtual/print_simple/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/virtual/print_simple/main.cpp.i
+.PHONY : virtual/print_simple/main.cpp.i
+
+virtual/print_simple/main.s: virtual/print_simple/main.cpp.s
+.PHONY : virtual/print_simple/main.s
+
+# target to generate assembly for a file
+virtual/print_simple/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/virtual/print_simple/main.cpp.s
+.PHONY : virtual/print_simple/main.cpp.s
+
+virtual/print_struct/main.o: virtual/print_struct/main.cpp.o
+.PHONY : virtual/print_struct/main.o
+
+# target to build an object file
+virtual/print_struct/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/virtual/print_struct/main.cpp.o
+.PHONY : virtual/print_struct/main.cpp.o
+
+virtual/print_struct/main.i: virtual/print_struct/main.cpp.i
+.PHONY : virtual/print_struct/main.i
+
+# target to preprocess a source file
+virtual/print_struct/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/virtual/print_struct/main.cpp.i
+.PHONY : virtual/print_struct/main.cpp.i
+
+virtual/print_struct/main.s: virtual/print_struct/main.cpp.s
+.PHONY : virtual/print_struct/main.s
+
+# target to generate assembly for a file
+virtual/print_struct/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/virtual/print_struct/main.cpp.s
+.PHONY : virtual/print_struct/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,6 +465,8 @@ help:
 	@echo "... build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId"
 	@echo "... friend_class_main"
 	@echo "... friend_function_main"
+	@echo "... virtual_print_simple_main"
+	@echo "... virtual_print_struct_main"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.i"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.s"
@@ -412,6 +488,12 @@ help:
 	@echo "... friend/function/main.o"
 	@echo "... friend/function/main.i"
 	@echo "... friend/function/main.s"
+	@echo "... virtual/print_simple/main.o"
+	@echo "... virtual/print_simple/main.i"
+	@echo "... virtual/print_simple/main.s"
+	@echo "... virtual/print_struct/main.o"
+	@echo "... virtual/print_struct/main.i"
+	@echo "... virtual/print_struct/main.s"
 .PHONY : help
 
 

@@ -12,6 +12,8 @@ set(OLD_GLOB
   "/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/Users/jimmy/Projects/LearnCpp/friend/class/main.cpp"
   "/Users/jimmy/Projects/LearnCpp/friend/function/main.cpp"
+  "/Users/jimmy/Projects/LearnCpp/virtual/print_simple/main.cpp"
+  "/Users/jimmy/Projects/LearnCpp/virtual/print_struct/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
