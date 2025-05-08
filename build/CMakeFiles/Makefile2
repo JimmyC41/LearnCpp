@@ -68,8 +68,10 @@ all: CMakeFiles/auto_ptr_v2_main.dir/all
 all: CMakeFiles/auto_ptr_v3_main.dir/all
 all: CMakeFiles/auto_ptr_v4_main.dir/all
 all: CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/all
+all: CMakeFiles/fcnptr_ch20.1_ex_main.dir/all
 all: CMakeFiles/friend_class_main.dir/all
 all: CMakeFiles/friend_function_main.dir/all
+all: CMakeFiles/quiz_ch19_main.dir/all
 all: CMakeFiles/virtual_print_simple_main.dir/all
 all: CMakeFiles/virtual_print_struct_main.dir/all
 .PHONY : all
@@ -80,8 +82,10 @@ codegen: CMakeFiles/auto_ptr_v2_main.dir/codegen
 codegen: CMakeFiles/auto_ptr_v3_main.dir/codegen
 codegen: CMakeFiles/auto_ptr_v4_main.dir/codegen
 codegen: CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/codegen
+codegen: CMakeFiles/fcnptr_ch20.1_ex_main.dir/codegen
 codegen: CMakeFiles/friend_class_main.dir/codegen
 codegen: CMakeFiles/friend_function_main.dir/codegen
+codegen: CMakeFiles/quiz_ch19_main.dir/codegen
 codegen: CMakeFiles/virtual_print_simple_main.dir/codegen
 codegen: CMakeFiles/virtual_print_struct_main.dir/codegen
 .PHONY : codegen
@@ -96,8 +100,10 @@ clean: CMakeFiles/auto_ptr_v2_main.dir/clean
 clean: CMakeFiles/auto_ptr_v3_main.dir/clean
 clean: CMakeFiles/auto_ptr_v4_main.dir/clean
 clean: CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/clean
+clean: CMakeFiles/fcnptr_ch20.1_ex_main.dir/clean
 clean: CMakeFiles/friend_class_main.dir/clean
 clean: CMakeFiles/friend_function_main.dir/clean
+clean: CMakeFiles/quiz_ch19_main.dir/clean
 clean: CMakeFiles/virtual_print_simple_main.dir/clean
 clean: CMakeFiles/virtual_print_struct_main.dir/clean
 .PHONY : clean
@@ -263,13 +269,45 @@ CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/clean:
 .PHONY : CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/fcnptr_ch20.1_ex_main.dir
+
+# All Build rule for target.
+CMakeFiles/fcnptr_ch20.1_ex_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=11,12 "Built target fcnptr_ch20.1_ex_main"
+.PHONY : CMakeFiles/fcnptr_ch20.1_ex_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fcnptr_ch20.1_ex_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmy/Projects/LearnCpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fcnptr_ch20.1_ex_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmy/Projects/LearnCpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/fcnptr_ch20.1_ex_main.dir/rule
+
+# Convenience name for target.
+fcnptr_ch20.1_ex_main: CMakeFiles/fcnptr_ch20.1_ex_main.dir/rule
+.PHONY : fcnptr_ch20.1_ex_main
+
+# codegen rule for target.
+CMakeFiles/fcnptr_ch20.1_ex_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=11,12 "Finished codegen for target fcnptr_ch20.1_ex_main"
+.PHONY : CMakeFiles/fcnptr_ch20.1_ex_main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/fcnptr_ch20.1_ex_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/clean
+.PHONY : CMakeFiles/fcnptr_ch20.1_ex_main.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/friend_class_main.dir
 
 # All Build rule for target.
 CMakeFiles/friend_class_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=11,12 "Built target friend_class_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=13,14 "Built target friend_class_main"
 .PHONY : CMakeFiles/friend_class_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -286,7 +324,7 @@ friend_class_main: CMakeFiles/friend_class_main.dir/rule
 # codegen rule for target.
 CMakeFiles/friend_class_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_class_main.dir/build.make CMakeFiles/friend_class_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=11,12 "Finished codegen for target friend_class_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=13,14 "Finished codegen for target friend_class_main"
 .PHONY : CMakeFiles/friend_class_main.dir/codegen
 
 # clean rule for target.
@@ -301,7 +339,7 @@ CMakeFiles/friend_class_main.dir/clean:
 CMakeFiles/friend_function_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=13,14 "Built target friend_function_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=15,16 "Built target friend_function_main"
 .PHONY : CMakeFiles/friend_function_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -318,7 +356,7 @@ friend_function_main: CMakeFiles/friend_function_main.dir/rule
 # codegen rule for target.
 CMakeFiles/friend_function_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=13,14 "Finished codegen for target friend_function_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=15,16 "Finished codegen for target friend_function_main"
 .PHONY : CMakeFiles/friend_function_main.dir/codegen
 
 # clean rule for target.
@@ -327,13 +365,45 @@ CMakeFiles/friend_function_main.dir/clean:
 .PHONY : CMakeFiles/friend_function_main.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/quiz_ch19_main.dir
+
+# All Build rule for target.
+CMakeFiles/quiz_ch19_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=17,18 "Built target quiz_ch19_main"
+.PHONY : CMakeFiles/quiz_ch19_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/quiz_ch19_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmy/Projects/LearnCpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/quiz_ch19_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmy/Projects/LearnCpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/quiz_ch19_main.dir/rule
+
+# Convenience name for target.
+quiz_ch19_main: CMakeFiles/quiz_ch19_main.dir/rule
+.PHONY : quiz_ch19_main
+
+# codegen rule for target.
+CMakeFiles/quiz_ch19_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=17,18 "Finished codegen for target quiz_ch19_main"
+.PHONY : CMakeFiles/quiz_ch19_main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/quiz_ch19_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/clean
+.PHONY : CMakeFiles/quiz_ch19_main.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/virtual_print_simple_main.dir
 
 # All Build rule for target.
 CMakeFiles/virtual_print_simple_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=15,16 "Built target virtual_print_simple_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=19,20 "Built target virtual_print_simple_main"
 .PHONY : CMakeFiles/virtual_print_simple_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -350,7 +420,7 @@ virtual_print_simple_main: CMakeFiles/virtual_print_simple_main.dir/rule
 # codegen rule for target.
 CMakeFiles/virtual_print_simple_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_simple_main.dir/build.make CMakeFiles/virtual_print_simple_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=15,16 "Finished codegen for target virtual_print_simple_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=19,20 "Finished codegen for target virtual_print_simple_main"
 .PHONY : CMakeFiles/virtual_print_simple_main.dir/codegen
 
 # clean rule for target.
@@ -365,7 +435,7 @@ CMakeFiles/virtual_print_simple_main.dir/clean:
 CMakeFiles/virtual_print_struct_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=17,18 "Built target virtual_print_struct_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=21,22 "Built target virtual_print_struct_main"
 .PHONY : CMakeFiles/virtual_print_struct_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -382,7 +452,7 @@ virtual_print_struct_main: CMakeFiles/virtual_print_struct_main.dir/rule
 # codegen rule for target.
 CMakeFiles/virtual_print_struct_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtual_print_struct_main.dir/build.make CMakeFiles/virtual_print_struct_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=17,18 "Finished codegen for target virtual_print_struct_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimmy/Projects/LearnCpp/build/CMakeFiles --progress-num=21,22 "Finished codegen for target virtual_print_struct_main"
 .PHONY : CMakeFiles/virtual_print_struct_main.dir/codegen
 
 # clean rule for target.
