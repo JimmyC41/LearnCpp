@@ -183,17 +183,17 @@ build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId/fast:
 .PHONY : build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId/fast
 
 #=============================================================================
-# Target rules for targets named fcnptr_ch20.1_ex_main
+# Target rules for targets named fcnptr_ch20.1_main
 
 # Build rule for target.
-fcnptr_ch20.1_ex_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fcnptr_ch20.1_ex_main
-.PHONY : fcnptr_ch20.1_ex_main
+fcnptr_ch20.1_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fcnptr_ch20.1_main
+.PHONY : fcnptr_ch20.1_main
 
 # fast build rule for target.
-fcnptr_ch20.1_ex_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/build
-.PHONY : fcnptr_ch20.1_ex_main/fast
+fcnptr_ch20.1_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_main.dir/build.make CMakeFiles/fcnptr_ch20.1_main.dir/build
+.PHONY : fcnptr_ch20.1_main/fast
 
 #=============================================================================
 # Target rules for targets named friend_class_main
@@ -222,17 +222,43 @@ friend_function_main/fast:
 .PHONY : friend_function_main/fast
 
 #=============================================================================
-# Target rules for targets named quiz_ch19_main
+# Target rules for targets named lambda_ch20.6_main
 
 # Build rule for target.
-quiz_ch19_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz_ch19_main
-.PHONY : quiz_ch19_main
+lambda_ch20.6_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lambda_ch20.6_main
+.PHONY : lambda_ch20.6_main
 
 # fast build rule for target.
-quiz_ch19_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/build
-.PHONY : quiz_ch19_main/fast
+lambda_ch20.6_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_ch20.6_main.dir/build.make CMakeFiles/lambda_ch20.6_main.dir/build
+.PHONY : lambda_ch20.6_main/fast
+
+#=============================================================================
+# Target rules for targets named quiz_ch19.2_main
+
+# Build rule for target.
+quiz_ch19.2_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz_ch19.2_main
+.PHONY : quiz_ch19.2_main
+
+# fast build rule for target.
+quiz_ch19.2_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19.2_main.dir/build.make CMakeFiles/quiz_ch19.2_main.dir/build
+.PHONY : quiz_ch19.2_main/fast
+
+#=============================================================================
+# Target rules for targets named quiz_ch20.1_main
+
+# Build rule for target.
+quiz_ch20.1_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz_ch20.1_main
+.PHONY : quiz_ch20.1_main
+
+# fast build rule for target.
+quiz_ch20.1_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch20.1_main.dir/build.make CMakeFiles/quiz_ch20.1_main.dir/build
+.PHONY : quiz_ch20.1_main/fast
 
 #=============================================================================
 # Target rules for targets named virtual_print_simple_main
@@ -380,29 +406,29 @@ auto_ptr/v4/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_ptr_v4_main.dir/build.make CMakeFiles/auto_ptr_v4_main.dir/auto_ptr/v4/main.cpp.s
 .PHONY : auto_ptr/v4/main.cpp.s
 
-fcnptr/ch20.1_ex/main.o: fcnptr/ch20.1_ex/main.cpp.o
-.PHONY : fcnptr/ch20.1_ex/main.o
+fcnptr/ch20.1/main.o: fcnptr/ch20.1/main.cpp.o
+.PHONY : fcnptr/ch20.1/main.o
 
 # target to build an object file
-fcnptr/ch20.1_ex/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/fcnptr/ch20.1_ex/main.cpp.o
-.PHONY : fcnptr/ch20.1_ex/main.cpp.o
+fcnptr/ch20.1/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_main.dir/build.make CMakeFiles/fcnptr_ch20.1_main.dir/fcnptr/ch20.1/main.cpp.o
+.PHONY : fcnptr/ch20.1/main.cpp.o
 
-fcnptr/ch20.1_ex/main.i: fcnptr/ch20.1_ex/main.cpp.i
-.PHONY : fcnptr/ch20.1_ex/main.i
+fcnptr/ch20.1/main.i: fcnptr/ch20.1/main.cpp.i
+.PHONY : fcnptr/ch20.1/main.i
 
 # target to preprocess a source file
-fcnptr/ch20.1_ex/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/fcnptr/ch20.1_ex/main.cpp.i
-.PHONY : fcnptr/ch20.1_ex/main.cpp.i
+fcnptr/ch20.1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_main.dir/build.make CMakeFiles/fcnptr_ch20.1_main.dir/fcnptr/ch20.1/main.cpp.i
+.PHONY : fcnptr/ch20.1/main.cpp.i
 
-fcnptr/ch20.1_ex/main.s: fcnptr/ch20.1_ex/main.cpp.s
-.PHONY : fcnptr/ch20.1_ex/main.s
+fcnptr/ch20.1/main.s: fcnptr/ch20.1/main.cpp.s
+.PHONY : fcnptr/ch20.1/main.s
 
 # target to generate assembly for a file
-fcnptr/ch20.1_ex/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_ex_main.dir/build.make CMakeFiles/fcnptr_ch20.1_ex_main.dir/fcnptr/ch20.1_ex/main.cpp.s
-.PHONY : fcnptr/ch20.1_ex/main.cpp.s
+fcnptr/ch20.1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fcnptr_ch20.1_main.dir/build.make CMakeFiles/fcnptr_ch20.1_main.dir/fcnptr/ch20.1/main.cpp.s
+.PHONY : fcnptr/ch20.1/main.cpp.s
 
 friend/class/main.o: friend/class/main.cpp.o
 .PHONY : friend/class/main.o
@@ -452,29 +478,77 @@ friend/function/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/friend_function_main.dir/build.make CMakeFiles/friend_function_main.dir/friend/function/main.cpp.s
 .PHONY : friend/function/main.cpp.s
 
-quiz/ch19/main.o: quiz/ch19/main.cpp.o
-.PHONY : quiz/ch19/main.o
+lambda/ch20.6/main.o: lambda/ch20.6/main.cpp.o
+.PHONY : lambda/ch20.6/main.o
 
 # target to build an object file
-quiz/ch19/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/quiz/ch19/main.cpp.o
-.PHONY : quiz/ch19/main.cpp.o
+lambda/ch20.6/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_ch20.6_main.dir/build.make CMakeFiles/lambda_ch20.6_main.dir/lambda/ch20.6/main.cpp.o
+.PHONY : lambda/ch20.6/main.cpp.o
 
-quiz/ch19/main.i: quiz/ch19/main.cpp.i
-.PHONY : quiz/ch19/main.i
+lambda/ch20.6/main.i: lambda/ch20.6/main.cpp.i
+.PHONY : lambda/ch20.6/main.i
 
 # target to preprocess a source file
-quiz/ch19/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/quiz/ch19/main.cpp.i
-.PHONY : quiz/ch19/main.cpp.i
+lambda/ch20.6/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_ch20.6_main.dir/build.make CMakeFiles/lambda_ch20.6_main.dir/lambda/ch20.6/main.cpp.i
+.PHONY : lambda/ch20.6/main.cpp.i
 
-quiz/ch19/main.s: quiz/ch19/main.cpp.s
-.PHONY : quiz/ch19/main.s
+lambda/ch20.6/main.s: lambda/ch20.6/main.cpp.s
+.PHONY : lambda/ch20.6/main.s
 
 # target to generate assembly for a file
-quiz/ch19/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19_main.dir/build.make CMakeFiles/quiz_ch19_main.dir/quiz/ch19/main.cpp.s
-.PHONY : quiz/ch19/main.cpp.s
+lambda/ch20.6/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_ch20.6_main.dir/build.make CMakeFiles/lambda_ch20.6_main.dir/lambda/ch20.6/main.cpp.s
+.PHONY : lambda/ch20.6/main.cpp.s
+
+quiz/ch19.2/main.o: quiz/ch19.2/main.cpp.o
+.PHONY : quiz/ch19.2/main.o
+
+# target to build an object file
+quiz/ch19.2/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19.2_main.dir/build.make CMakeFiles/quiz_ch19.2_main.dir/quiz/ch19.2/main.cpp.o
+.PHONY : quiz/ch19.2/main.cpp.o
+
+quiz/ch19.2/main.i: quiz/ch19.2/main.cpp.i
+.PHONY : quiz/ch19.2/main.i
+
+# target to preprocess a source file
+quiz/ch19.2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19.2_main.dir/build.make CMakeFiles/quiz_ch19.2_main.dir/quiz/ch19.2/main.cpp.i
+.PHONY : quiz/ch19.2/main.cpp.i
+
+quiz/ch19.2/main.s: quiz/ch19.2/main.cpp.s
+.PHONY : quiz/ch19.2/main.s
+
+# target to generate assembly for a file
+quiz/ch19.2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch19.2_main.dir/build.make CMakeFiles/quiz_ch19.2_main.dir/quiz/ch19.2/main.cpp.s
+.PHONY : quiz/ch19.2/main.cpp.s
+
+quiz/ch20.1/main.o: quiz/ch20.1/main.cpp.o
+.PHONY : quiz/ch20.1/main.o
+
+# target to build an object file
+quiz/ch20.1/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch20.1_main.dir/build.make CMakeFiles/quiz_ch20.1_main.dir/quiz/ch20.1/main.cpp.o
+.PHONY : quiz/ch20.1/main.cpp.o
+
+quiz/ch20.1/main.i: quiz/ch20.1/main.cpp.i
+.PHONY : quiz/ch20.1/main.i
+
+# target to preprocess a source file
+quiz/ch20.1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch20.1_main.dir/build.make CMakeFiles/quiz_ch20.1_main.dir/quiz/ch20.1/main.cpp.i
+.PHONY : quiz/ch20.1/main.cpp.i
+
+quiz/ch20.1/main.s: quiz/ch20.1/main.cpp.s
+.PHONY : quiz/ch20.1/main.s
+
+# target to generate assembly for a file
+quiz/ch20.1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_ch20.1_main.dir/build.make CMakeFiles/quiz_ch20.1_main.dir/quiz/ch20.1/main.cpp.s
+.PHONY : quiz/ch20.1/main.cpp.s
 
 virtual/print_simple/main.o: virtual/print_simple/main.cpp.o
 .PHONY : virtual/print_simple/main.o
@@ -537,10 +611,12 @@ help:
 	@echo "... auto_ptr_v3_main"
 	@echo "... auto_ptr_v4_main"
 	@echo "... build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId"
-	@echo "... fcnptr_ch20.1_ex_main"
+	@echo "... fcnptr_ch20.1_main"
 	@echo "... friend_class_main"
 	@echo "... friend_function_main"
-	@echo "... quiz_ch19_main"
+	@echo "... lambda_ch20.6_main"
+	@echo "... quiz_ch19.2_main"
+	@echo "... quiz_ch20.1_main"
 	@echo "... virtual_print_simple_main"
 	@echo "... virtual_print_struct_main"
 	@echo "... CMakeFiles/3.31.4/CompilerIdCXX/CMakeCXXCompilerId.o"
@@ -558,18 +634,24 @@ help:
 	@echo "... auto_ptr/v4/main.o"
 	@echo "... auto_ptr/v4/main.i"
 	@echo "... auto_ptr/v4/main.s"
-	@echo "... fcnptr/ch20.1_ex/main.o"
-	@echo "... fcnptr/ch20.1_ex/main.i"
-	@echo "... fcnptr/ch20.1_ex/main.s"
+	@echo "... fcnptr/ch20.1/main.o"
+	@echo "... fcnptr/ch20.1/main.i"
+	@echo "... fcnptr/ch20.1/main.s"
 	@echo "... friend/class/main.o"
 	@echo "... friend/class/main.i"
 	@echo "... friend/class/main.s"
 	@echo "... friend/function/main.o"
 	@echo "... friend/function/main.i"
 	@echo "... friend/function/main.s"
-	@echo "... quiz/ch19/main.o"
-	@echo "... quiz/ch19/main.i"
-	@echo "... quiz/ch19/main.s"
+	@echo "... lambda/ch20.6/main.o"
+	@echo "... lambda/ch20.6/main.i"
+	@echo "... lambda/ch20.6/main.s"
+	@echo "... quiz/ch19.2/main.o"
+	@echo "... quiz/ch19.2/main.i"
+	@echo "... quiz/ch19.2/main.s"
+	@echo "... quiz/ch20.1/main.o"
+	@echo "... quiz/ch20.1/main.i"
+	@echo "... quiz/ch20.1/main.s"
 	@echo "... virtual/print_simple/main.o"
 	@echo "... virtual/print_simple/main.i"
 	@echo "... virtual/print_simple/main.s"

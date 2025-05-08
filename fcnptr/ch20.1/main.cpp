@@ -1,6 +1,11 @@
 #include <iostream>
+#include <functional>
 
-void selectionSort(int* array, int size, bool(*comparisonFcn)(int, int))
+// Instead of bool(*comparisonFcn)(int, int): 
+// We can use std::function<bool(int, int) comparisonFcn), BUT
+// we'll need to have explicit types for the comparison fcn
+
+void selectionSort(int* array, int size,  bool(*comparisonFcn)(int, int))
 {
     if (!array || !comparisonFcn) return;
 

@@ -3,10 +3,12 @@
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v3_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/auto_ptr_v4_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/build_CMakeFiles_3.31.4_CompilerIdCXX_CMakeCXXCompilerId.dir
-/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/fcnptr_ch20.1_ex_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/fcnptr_ch20.1_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/friend_class_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/friend_function_main.dir
-/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/quiz_ch19_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/lambda_ch20.6_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/quiz_ch19.2_main.dir
+/Users/jimmy/Projects/LearnCpp/build/CMakeFiles/quiz_ch20.1_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/virtual_print_simple_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/virtual_print_struct_main.dir
 /Users/jimmy/Projects/LearnCpp/build/CMakeFiles/edit_cache.dir
