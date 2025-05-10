@@ -28,7 +28,7 @@ public:
         // a.m_ptr points to a newly-allocated copy of the resource
     }
 
-    // Assignment operator, do a deep copy of a.m_ptr to m_ptr
+    // Copy assignment operator, do a deep copy of a.m_ptr to m_ptr
     Auto_ptr_v3& operator=(const Auto_ptr_v3& a)
     {
         if (&a == this)
