@@ -21,8 +21,7 @@ public:
         : _ptr{nullptr}
     {}
 
-    // explicit: Prevent implicit ownership transfer of the raw pointer
-    explicit UniquePointer(T* raw) noexcept
+    UniquePointer(T* raw) noexcept
         : _ptr{raw}
     {}
 
@@ -32,7 +31,9 @@ public:
 
     UniquePointer(UniquePointer&& other) noexcept
         : _ptr{std::exchange(other._ptr, nullptr)}
-    {}
+    {
+        std::cout << "Move constructor called.\n";
+    }
 
     UniquePointer& operator=(UniquePointer&& other) noexcept
     {
@@ -75,15 +76,25 @@ public:
 
 int main()
 {
+    int* raw = nullptr;
     {
         UniquePointer<int> p1(new int(1403));
         std::cout << "*p1 =  " << *p1 << '\n';
-
-        *p1 = 2025;
-
-        UniquePointer<int> p2 = std::move(p1);
-        std::cout << "*p2 =  " << *p1 << '\n';
+        raw = p1.release();
     }
+    *raw = 2025;
+
+    UniquePointer<int> p2(raw);
+    std::cout << "*p2 =  " << *p2 << '\n';
+
+    UniquePointer<int> p3{std::move(p2)};
+    std::cout << "*p3 =  " << *p3 << '\n';
+
+    UniquePointer<int> p4{};
+    p4 = std::move(p3);
+    *p4 = 14032025;
+
+    std::cout << "*p4 = " << *p4 << '\n';
 
     return 0;
 }
