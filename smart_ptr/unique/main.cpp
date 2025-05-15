@@ -14,64 +14,62 @@ template <typename T, typename Deleter = CustomDeleter<T>>
 class UniquePointer
 {
 private:
-    T* _ptr{};
+    T* ptr_{};
 
 public:
-    UniquePointer() noexcept
-        : _ptr{nullptr}
-    {}
-
-    UniquePointer(T* raw) noexcept
-        : _ptr{raw}
-    {}
-
-    // Disable copy constructor and assignment
+    UniquePointer() noexcept : UniquePointer(nullptr) {}
+    UniquePointer(T* raw) noexcept : ptr_{raw} {}
     UniquePointer(UniquePointer const&) = delete;
-    UniquePointer& operator=(UniquePointer const&) = delete;
 
-    UniquePointer(UniquePointer&& other) noexcept
-        : _ptr{std::exchange(other._ptr, nullptr)}
+    UniquePointer(UniquePointer&& other) noexcept :
     {
         std::cout << "Move constructor called.\n";
+        MoveFrom(other);
     }
+
+    UniquePointer& operator=(UniquePointer const&) = delete;
 
     UniquePointer& operator=(UniquePointer&& other) noexcept
     {
         std::cout << "Move operator= called.\n";
-
         if (this != &other)
         {
-            reset();
-            _ptr = std::exchange(other._ptr, nullptr);
+            Reset();
+            MoveFrom(other);
         }
-
         return *this;
     }
 
     ~UniquePointer() noexcept
     {
         std::cout << "Destructor called.\n";
-
-        if (_ptr) Deleter{}(_ptr);
+        Reset();
     }
     
     T* release() noexcept
     {
-        T* old = _ptr;
-        _ptr = nullptr;
+        T* old = ptr_;
+        ptr_ = nullptr;
         return old;
     }
 
-    void reset(T* newPtr = nullptr) noexcept
+    T& operator*() const noexcept { return *ptr_; }
+    T* operator->() const noexcept { return ptr_; }
+    T* get() const noexcept { return ptr_; }
+    explicit operator bool() const noexcept { return ptr_ != nullptr; }
+
+private:
+    void MoveFrom(UniquePointer&& other) noexcept
     {
-        if (_ptr) Deleter{}(_ptr);
-        _ptr = newPtr;
+        ptr_ = std::exchange(other.ptr_, nullptr);
     }
 
-    T& operator*() const noexcept { return *_ptr; }
-    T* operator->() const noexcept { return _ptr; }
-    T* get() const noexcept { return _ptr; }
-    explicit operator bool() const noexcept { return _ptr != nullptr; }
+    void Reset(T* newPtr = nullptr) noexcept
+    {
+        if (ptr_)
+            Deleter{}(ptr_);
+        ptr_ = newPtr;
+    }
 };
 
 int main()
