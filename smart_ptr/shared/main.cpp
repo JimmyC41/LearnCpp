@@ -1,4 +1,6 @@
 #include <mutex>
+#include <iostream>
+#include <format>
 
 struct ControlBlock
 {
@@ -27,7 +29,7 @@ public:
 
     SharedPointer& operator=(const SharedPointer& other) noexcept
     {
-        if (!this == &other)
+        if (this != &other)
         {
             TryRelease();
             CopyFrom(other);
@@ -37,7 +39,7 @@ public:
 
     SharedPointer(SharedPointer&& other) noexcept
     {
-        MoveFrom(other);
+        MoveFrom(std::move(other));
     }
 
     SharedPointer& operator=(SharedPointer&& other) noexcept
@@ -47,7 +49,7 @@ public:
             TryRelease();
             MoveFrom(other);
         }
-        return *this
+        return *this;
     }
 
     ~SharedPointer()
@@ -74,12 +76,13 @@ public:
     T* get() const { return ptr_; }
     T* operator->() const { return ptr_; }
     T& operator*() const { return *ptr_; }
-    operator bool() const noexcept { return ptr_ == nullptr; }
+    operator bool() const noexcept { return ptr_ != nullptr; }
 
 private:
     // Sets the raw pointer and allocates control block
     void Initialize(T* rawPointer)
     {
+        std::cout << "New shared pointer initialized!\n";
         ptr_ = rawPointer;
         controlBlock_ = new ControlBlock{1};
     }
@@ -87,8 +90,9 @@ private:
     // Points to the same resource and control block
     void CopyFrom(const SharedPointer& other) noexcept
     {
-        ptr_ = other->ptr_;
-        controlBlock_ = other->controlBlock_;
+        std::cout << "Existing shared pointer copied!\n";
+        ptr_ = other.ptr_;
+        controlBlock_ = other.controlBlock_;
 
         if (!controlBlock_)
             return;
@@ -96,12 +100,14 @@ private:
         {
             std::scoped_lock lock{controlBlock_->mutex_};
             controlBlock_->refCount_++;
+            std::cout << std::format("refCount: {}\n", controlBlock_->refCount_);
         }
     }
 
     // Transfer ownership resource and control block
     void MoveFrom(SharedPointer&& other) noexcept
     {
+        std::cout << "Ownership of shared pointer moved!\n";
         ptr_ = std::exchange(other.ptr_, nullptr);
         controlBlock_ = std::exchange(other.controlBlock_, nullptr);
     }
@@ -114,10 +120,12 @@ private:
             return;
 
         {
-            std::scoped_lock lock{controlBlock_->mutex};
+            std::scoped_lock lock{controlBlock_->mutex_};
             if (--controlBlock_->refCount_ != 0) // refCount is decremented
                 return;
         }
+
+        std::cout << "refCount reached 0. Destroying now...";
 
         // controlBlock_ is not null and refCount_ = 0:
         delete ptr_;
@@ -126,3 +134,23 @@ private:
         controlBlock_ = nullptr;
     }
 };
+
+int main()
+{
+    SharedPointer<int> s1(nullptr);
+
+    {
+        SharedPointer<int> p1(new int(95));
+        std::cout << std::format("p1 value is {}\n", *p1);
+        s1 = p1;
+    }
+
+    *s1 = 2026;
+    SharedPointer<int> s2(s1);
+    auto s3 = s2;
+    auto s4 = std::move(s1);
+
+    std::cout << std::format("shared ptrs point to {}, {}, {}\n", *s2, *s3, *s4);
+
+    return 0;
+}

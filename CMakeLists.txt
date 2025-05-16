@@ -7,10 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Put executables into build/bin
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
-# Find all .cpp files two levels deep
+# Find all main.cpp files two levels deep
 file(GLOB_RECURSE ALL_SRCS
     CONFIGURE_DEPENDS
-    "${CMAKE_SOURCE_DIR}/*/*/*.cpp")
+    "${CMAKE_SOURCE_DIR}/*/*/main.cpp")
 
 # For each src file, generate an executable
 foreach(src IN LISTS ALL_SRCS)

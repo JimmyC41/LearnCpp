@@ -21,10 +21,10 @@ public:
     UniquePointer(T* raw) noexcept : ptr_{raw} {}
     UniquePointer(UniquePointer const&) = delete;
 
-    UniquePointer(UniquePointer&& other) noexcept :
+    UniquePointer(UniquePointer&& other) noexcept : UniquePointer(nullptr)
     {
         std::cout << "Move constructor called.\n";
-        MoveFrom(other);
+        MoveFrom(std::move(other));
     }
 
     UniquePointer& operator=(UniquePointer const&) = delete;
@@ -35,7 +35,7 @@ public:
         if (this != &other)
         {
             Reset();
-            MoveFrom(other);
+            MoveFrom(std::move(other));
         }
         return *this;
     }
